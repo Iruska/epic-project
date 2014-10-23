@@ -29,7 +29,7 @@
             <div class="animals">
               <img src="pict/owl.png" alt="">
               <img src="pict/cat.png" alt="">
-              <img src="pict/bird.png" alt="">
+              <img src="pict/bird.png" alt="" class="bird" >
             </div>
           </div>
           <!-- Меню -->
@@ -81,21 +81,73 @@
           <div class="col-xs-7">
             <h1>Мы - Школа интернет-технологий</h1>
             <p class="large-text">У нас можно получить level-up и открыть в себе способности веб-дизайнера, верстальщика или веб-программиста, наработать портфолио, пройти тестирование и найти работу</p>
-            <div class="row">
-              <div class="col-xs-3">1</div>
-              <div class="col-xs-3">2</div>
-              <div class="col-xs-3">3</div>
-              <div class="col-xs-3">4</div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs customize-tabs" role="tablist">
+              <li class=""><a href="#tab-1" role="tab" data-toggle="tab">Чему здесь учат</a></li>
+              <li class="active"><a href="#tab-2" role="tab" data-toggle="tab">Почему это круто</a></li>
+              <li><a href="#tab-3" role="tab" data-toggle="tab">Сколько это стоит</a></li>
+              <li><a href="#tab-4" role="tab" data-toggle="tab">Какой курс выбрать</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div class="tab-pane" id="tab-1">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="pict/html5-icon.png" class="" alt="">
+                    <p>Верстать страницы различной сложности</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="pict/css3-icon.png" class="" alt="">
+                    <p>Прикручивать спецэффекты, анимации и крутые скроллы на страницах</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane active" id="tab-2">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="pict/html5-icon.png" class="" alt="">
+                    <p>Получи левел ап и открой в себе способности веб-дизайнера или кодера</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="pict/css3-icon.png" class="" alt="">
+                    <p>Получи левел ап и открой в себе способности веб-дизайнера или кодера</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <img src="pict/html5-icon.png" class="" alt="">
+                    <p>Мы предлагаем насыщенные курсы по созданию сайтов, дизайну и разработке от 8000 до 17000 рублей</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="pict/html5-icon.png" class="" alt="">
+                    <p>Получи левел ап и открой в себе способности веб-дизайнера или кодера</p>
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="pict/css3-icon.png" class="" alt="">
+                    <p>Получи левел ап и открой в себе способности веб-дизайнера или кодера</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <!-- Колонка с айпадом -->
           <div class="col-xs-offset-1 col-xs-4">
             <div class="ipad">
               <img src="pict/large-logo.png" alt="">
               <p>Узнайте о том, как мы обучаем и чем круты на короткой экскурсии</p>
-              <button type="button" class="btn btn-primary btn-shadow">Экскурсия по школе</button>
+              <button type="button" class="btn btn-primary btn-shadow icon-arrow">Экскурсия по школе</button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -116,10 +168,10 @@
         top: 0,
         center: true,
         left: 240,
-        clip:true,
-        show: true,
+        clip: true,
+        // show: true,
         })
-      });
+      }); 
     </script>
 
   </body>
