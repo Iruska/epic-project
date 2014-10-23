@@ -1,11 +1,53 @@
-h1, p, a{
+
+/* -------------------
+   Цветовые переменные
+  -------------------- */  
+
+@grey-color: #b4b4b4;
+@lightgrey-color: #dcdcdc;  
+@red-color: #de4722;
+
+@text-color: #3c3c3c;
+
+
+
+/* --------------
+   Общие стили
+  --------------- */ 
+body{
 	font-family: 'PT Sans', sans-serif;
 }
 
+/* Типография */
+h1{
+	color: @red-color;
+	font-weight: bold;
+	font-size: 32px;
+}
+p{
+	color: @text-color;
+}
 
-/*-------------
+/* Стили для кнопок */ 
+button{
+	font-size: 16px;
+	font-weight: bold;
+}
+.btn-shadow{
+	box-shadow: 0px 3px 0px 0px #30557b;
+}
+
+/* Формы */
+button, input{
+	outline: none!important;
+}
+
+
+
+
+/* --------------
   header styles
----------------*/ 
+  --------------- */ 
 
 /* Кастомизация навигации */ 
 .navbar{ 
@@ -21,22 +63,22 @@ h1, p, a{
 	background: #272727;
 	.nav{
 		.telephone{
-			color: #dcdcdc;
+			color: @lightgrey-color;
 			font-size: 14px;
 			font-weight: bold;
 			cursor: default;
 			text-decoration: none;
-			&:hover{ color: #dcdcdc; }
+			&:hover{ color: @lightgrey-color; }
 		}
 		li a{
-			color: #b4b4b4;
+			color: @grey-color;
 			font-size: 12px;
 			padding: 5px;
 			margin: 0 10px;
 			cursor: pointer;
 			text-decoration: underline;
 			&:hover{ 
-				color: #b4b4b4;
+				color: @grey-color;
 				text-decoration: none; 
 			}
 		}
@@ -65,6 +107,7 @@ h1, p, a{
 .main-menu{
 	min-height: 75px;
 	background: #333a41;
+	margin-bottom: 0;
 	.navbar-collapse{ padding-right: 0; }
 	.logo{ 
 		display: block;
@@ -95,4 +138,36 @@ h1, p, a{
 	}
 }
 
+/* --------------------
+    promo-block styles
+   -------------------- */ 
 
+.promo-block{
+	height: 400px;
+	padding-top: 25px;
+	background: url(../img/bg-promo.jpg) no-repeat top center;
+	background-size: cover;
+	.large-text{ margin: 30px 0 40px; }
+}
+.large-text{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+/* Блок с айпадом */ 
+.ipad{
+	width: 287px;
+	height: 426px;
+	text-align: center;
+	padding: 77px 25px 20px;
+	background-image: url(../img/ipad.png);
+	background-repeat: no-repeat;
+	p{
+		color: #fff;
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: bold;
+		padding: 25px 35px 10px;
+	}
+}
