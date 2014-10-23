@@ -1396,19 +1396,19 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 360px) and (max-width: 769px){
+  .container {
+    width: 340px;
+  }
+}*/
+@media (min-width: 770px) and (max-width: 959px) {
   .container {
     width: 750px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+    width: 940px;
   }
 }
 .container-fluid {
@@ -4036,12 +4036,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 539px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 540px) {
   .navbar-form {
     width: auto;
     padding-top: 0;

@@ -1,0 +1,20 @@
+/*-------------
+  header styles
+---------------*/
+@media (max-width: 767px) {
+  .top-menu {
+    display: none;
+  }
+  .main-menu .navbar-collapse {
+    float: none!important;
+  }
+  .main-menu .nav li {
+    padding: 10px 0px;
+  }
+  .main-menu .nav li a {
+    display: inline-block;
+  }
+  .main-menu .logo {
+    margin-left: 15px;
+  }
+}
