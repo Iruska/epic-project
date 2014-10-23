@@ -1,6 +1,14 @@
 /*-------------
   header styles
 ---------------*/
+@media (max-width: 961px) {
+  .big-block {
+    display: none;
+  }
+  .small-block {
+    display: inherit;
+  }
+}
 @media (max-width: 767px) {
   .top-menu {
     display: none;
@@ -16,5 +24,8 @@
   }
   .main-menu .logo {
     margin-left: 15px;
+  }
+  .small-block {
+    display: none;
   }
 }
