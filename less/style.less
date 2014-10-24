@@ -5,11 +5,15 @@
 
 @grey-color: #b4b4b4;
 @lightgrey-color: #dcdcdc;  
-@red-color: #de4722;
+@darkred-color: #de4722;
+@red-color: #f04a22;
 @burgundy-color: #8c0000;
 
+@head-color: #353535;
 @text-color: #3c3c3c;
+@light-text-color: #5f5f5f;
 
+@red-button: #ea5431;
 
 
 /* --------------
@@ -21,20 +25,51 @@ body{
 
 /* Типография */
 h1{
-	color: @red-color;
+	color: @darkred-color;
 	font-weight: bold;
 	font-size: 32px;
 }
+h2{
+	color: @head-color;
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+}
 p{
+	font-size: 13px;
+	line-height: 18px;
 	color: @text-color;
 }
 
+/* Стилизация красных ссылок */ 
+.link{
+	font-size: 13px;
+	transition: 0.1s all ease;
+	&:hover{ 
+		text-decoration: none;
+		border-bottom-color: transparent; 
+	}
+}
+.red-link{
+	color: @red-color;
+	border-bottom: 1px solid @red-color;
+	&:hover{ color: @red-color; }
+}
+.grey-link{
+	color: @head-color;
+	border-bottom: 1px solid @head-color;
+	&:hover{ color: @head-color; }
+}	
 
 /* Стили для кнопок */ 
 button.btn{
 	font-size: 16px;
 }
-.btn-shadow{
+.btn-danger{ background: @red-button; }
+.btn-danger.btn-shadow{
+	box-shadow: 0px 3px 0px 0px #ca512f;
+}
+.btn-primary.btn-shadow{
 	box-shadow: 0px 3px 0px 0px #30557b;
 }
 .btn-black{
@@ -66,14 +101,13 @@ button.btn{
 		animation: arrow 1s infinite;
 	}
 }
-/* Анимации стрелочки */ 
+
+/* Анимация стрелочки */ 
 @keyframes arrow{
   0%{ background-position: 92% 50%; }
   50%{ background-position: 96% 50%; }
   100%{ background-position: 92% 50%; }
 }
-
-
 
 
 /* Формы */
@@ -88,10 +122,7 @@ button, input{
   --------------- */ 
 
 /* Кастомизация навигации */ 
-.navbar{ 
-	border: 0;
-	border-radius: 0; 
-}
+.navbar{ border: 0; border-radius: 0; }
 
 /* Верхняя плашка */ 
 .top-menu{
@@ -202,6 +233,7 @@ button, input{
 .ipad{
 	width: 287px;
 	height: 426px;
+	position: absolute;
 	text-align: center;
 	padding: 77px 25px 20px;
 	background-image: url(../img/ipad.png);
@@ -244,7 +276,7 @@ button, input{
 		background: url(../img/icon-arrow-down.png) no-repeat;
 	}
 }
-.tab-content{
+.customize_tab-content{
 	img,p{ 
 		display: inline-block;
 		vertical-align: middle;
@@ -269,5 +301,105 @@ button, input{
 		font-size: 14px;
 		line-height: 18px;
 		padding: 10px 6px;
+	}
+}
+
+
+
+/* --------------------
+    near-courses styles
+   -------------------- */
+
+.near-courses{
+	padding-top: 10px;
+	&_header{ border-bottom: 1px solid @red-color; }
+	&_events{
+		padding-top: 30px;
+	}
+	&_nav-tabs{
+		li{
+			width: 100%;
+			display: block;
+			border: 0;
+			position: relative;
+			margin-bottom: 20px;
+			border: 1px solid #cfcfcf;
+			border-radius: 3px;
+			a{ color: @text-color; }
+			&:hover, &:focus{ border-color: @red-color; }
+			&:after{
+				content: "";
+				width: 13px;
+				height: 24px;
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				margin-top: -12px;
+				background: url(../img/sprite-arrows.png) no-repeat;
+			}
+			&:hover:after{ background-position: 0px -27px; }
+		}
+		li.active{
+			border: 0;
+			border: 1px solid @red-color; 
+			background-position: 0px -27px;
+			&:after{
+				background-position: 0px -27px;
+			}
+		}
+		h3{
+			font-size: 15px;
+			line-height: 17px;
+			margin: 0 0 5px;
+		}
+		p{
+			font-size: 11px;
+			line-height: 15px;
+			color: @light-text-color;
+		}
+		time{
+			display: block;
+			font-size: 50px;
+			color: @red-color;
+			font-weight: bold;
+			line-height: 20px;
+			padding-top: 15px;
+			span{ font-size: 16px; }
+		}
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover{
+		border-color: transparent;
+		background: transparent;
+	}
+	&_tab-content{
+		h3, p{ margin: 0 0 10px; }
+		img{ width: 100%; }
+	}
+	&_links{
+		padding: 20px 0;
+		.btn{
+			font-size: 13px;
+			padding: 2px 17px;
+			margin-left: 25px;
+		}
+	}
+}
+
+.subscribe{
+	text-align: center;
+	padding: 55px 0 40px;
+}
+.icon-email{
+	position: relative;
+	&:before{
+		content: "";
+		width: 12px;
+		height: 9px;
+		position: absolute;
+		top: 4px;
+		left: -16px;
+		background: url(../img/icon-email.png)
 	}
 }

@@ -24,8 +24,8 @@
   }
   .top-menu,
   .small-block-trip,
-  .nav-tabs,
-  .tab-content {
+  .promo-block .nav-tabs,
+  .promo-block .tab-content {
     display: none;
   }
   .promo-block {
@@ -48,5 +48,8 @@
     padding: 40px 20px;
     min-height: 120px;
     background: #cfcfc5 url(../img/bg-block-trip.jpg);
+  }
+  .subscribe {
+    display: none;
   }
 }
