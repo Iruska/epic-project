@@ -3,12 +3,11 @@
 ---------------*/ 
 
 @media (max-width: 961px){
-	.big-block{ display: none; }
-	.small-block{ display: inherit; }
+	.big-block-trip{ display: none; }
+	.small-block-trip{ display: inherit; }
 }
 
 @media (max-width: 767px){
-	.top-menu{ display: none; }
 	.main-menu{
 		.navbar-collapse{ float: none!important; }
 		.nav{
@@ -19,7 +18,29 @@
 		}
 		.logo{ margin-left: 15px; }
 	}
-	.small-block{ display: none; }
+	.top-menu, .small-block-trip,
+	.nav-tabs, .tab-content{ 
+		display: none; 
+	}
+	.promo-block{
+		padding: 0 0 15px;
+		height: auto;
+		background: #fff;
+		h1{ font-size: 21px; }
+		.large-text{ 
+			margin: 10px 0;
+			font-size: 14px; 
+			line-height: 20px;
+			font-weight: normal;
+		}
+	}
+	.block-trip{
+		display: inherit;
+		text-align: center;
+		padding: 40px 20px;
+		min-height: 120px;
+		background: #cfcfc5 url(../img/bg-block-trip.jpg);
+	}
 }
 
 
