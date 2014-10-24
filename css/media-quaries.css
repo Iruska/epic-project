@@ -8,8 +8,11 @@
   .small-block-trip {
     display: inherit;
   }
+  .subscribe {
+    padding-top: 22px;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .main-menu .navbar-collapse {
     float: none!important;
   }
@@ -51,5 +54,9 @@
   }
   .subscribe {
     display: none;
+  }
+  .near-courses h2 {
+    font-size: 22px;
+    font-weight: normal;
   }
 }
