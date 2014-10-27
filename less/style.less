@@ -48,6 +48,10 @@ p{
 	line-height: 20px;
 	font-style: italic;
 }
+.separator{
+	padding-top: 20px;
+	border-bottom: @separator;
+}
 
 /* Стилизация красных ссылок */ 
 .link{
@@ -471,10 +475,6 @@ button, input{
 		border-color: transparent;
 		background: transparent;
 	}
-	.separator{
-		padding-top: 20px;
-		border-bottom: @separator;
-	}
 	&_nav-tabs{
 		border: none;
 		li{
@@ -572,6 +572,33 @@ button, input{
 			font-size: 15px;
 			min-height: 160px;
 		}
+		.btn{ font-size: 15px; }
+		img{ width: 94px; }
+	}
+}
+
+
+/* -----------------------
+    friends styles
+   ----------------------*/
+
+.friends{
+	h2{ text-align: center; }
+	&_head{
+		width: 70%;
+		margin: 0 auto 20px;
+		font-size: 15px;
+		line-height: 18px;
+		text-align: center;
+	}
+	&_item{
+		margin: 30px 0 60px;
+		h3{
+			font-size: 20px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+		p{ font-size: 15px; padding-bottom: 10px; }
 		.btn{ font-size: 15px; }
 		img{ width: 94px; }
 	}
