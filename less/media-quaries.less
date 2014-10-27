@@ -2,12 +2,29 @@
   header styles
 ---------------*/ 
 
+// планшет
 @media (max-width: 961px){
 	.big-block-trip{ display: none; }
 	.small-block-trip{ display: inherit; }
 	.subscribe{ padding-top: 22px; }
+	.reviews{
+		&_nav-tabs{
+			width: 82%;
+			margin: 0 auto;
+		}
+		&_tab-content{ 
+			text-align: center;
+			p{ 
+				width: 90%; 
+				margin: 0 auto 10px;
+			} 
+		}
+		&_form-review{ display: none; }
+	}
 }
 
+
+// телефон
 @media (max-width: 769px){
 	.main-menu{
 		.navbar-collapse{ float: none!important; }
@@ -50,6 +67,8 @@
 		}
 	}
 	.near-courses_all-courses{ margin-bottom: 30px; }
+	.reviews{ display: none; }
+	.reviews-slider{ display: inherit; }
 }
 
 

@@ -11,6 +11,20 @@
   .subscribe {
     padding-top: 22px;
   }
+  .reviews_nav-tabs {
+    width: 82%;
+    margin: 0 auto;
+  }
+  .reviews_tab-content {
+    text-align: center;
+  }
+  .reviews_tab-content p {
+    width: 90%;
+    margin: 0 auto 10px;
+  }
+  .reviews_form-review {
+    display: none;
+  }
 }
 @media (max-width: 769px) {
   .main-menu .navbar-collapse {
@@ -61,5 +75,11 @@
   }
   .near-courses_all-courses {
     margin-bottom: 30px;
+  }
+  .reviews {
+    display: none;
+  }
+  .reviews-slider {
+    display: inherit;
   }
 }

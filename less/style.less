@@ -8,6 +8,7 @@
 @darkred-color: #de4722;
 @red-color: #f04a22;
 @burgundy-color: #8c0000;
+@darkblue-grey: #5e6c79;
 
 @head-color: #353535;
 @text-color: #3c3c3c;
@@ -42,6 +43,11 @@ p{
 	line-height: 18px;
 	color: @text-color;
 }
+.review-text{
+	font-size: 15px;
+	line-height: 20px;
+	font-style: italic;
+}
 
 /* Стилизация красных ссылок */ 
 .link{
@@ -62,9 +68,25 @@ p{
 	border-bottom: 1px solid @head-color;
 	&:hover{ color: @head-color; }
 }	
+.link-social{
+	color: @red-color;
+	padding-left: 3px;
+	i{
+		width: 13px;
+		height: 13px;
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		background: url(../img/mini-icon-vk.png);
+	}
+}
+.link-site{
+	color: @text-color;
+}
 
 /* Стили для кнопок */ 
 button.btn{
+	color: #fff;
 	font-size: 16px;
 }
 .btn-danger{ background: @red-button; }
@@ -74,8 +96,18 @@ button.btn{
 .btn-primary.btn-shadow{
 	box-shadow: 0px 3px 0px 0px #30557b;
 }
+.btn-grey{ 
+	background: @darkblue-grey;
+	&:hover, &:active, &:focus{ 
+		color: #fff; 
+		background: #54616C;
+	} 
+}
+.btn-grey.btn-shadow{
+	box-shadow: 0px 3px 0px 0px #3e4853;
+}
 .btn-black{
-	color: #000;
+	color: #000!important;
 	font-size: 14px;
 	font-weight: bold;
 	border: 2px solid #000;
@@ -426,3 +458,69 @@ button, input{
 		background: url(../img/icon-email.png)
 	}
 }
+
+
+/* --------------------
+    reviews styles
+   -------------------- */
+
+.reviews{
+	margin-bottom: 20px;
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, 
+	.nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover{
+		border-color: transparent;
+		background: transparent;
+	}
+	.separator{
+		padding-top: 20px;
+		border-bottom: @separator;
+	}
+	&_nav-tabs{
+		border: none;
+		li{
+			padding: 10px 0 15px;
+			margin-right: 16px;
+			a{ padding: 0; }
+			img{
+				width: 78px;
+				height: 78px;
+				border: 3px solid transparent;
+				border-radius: 100%;
+				padding: 3px;
+			}
+			&:hover img{ border-color: @red-color; }
+		}
+		li.active img{ border-color: @red-color; }
+	}
+	&_tab-content{
+		padding-bottom: 20px;
+		p.review-text{ padding-left: 3px; }
+	}
+	&_form-review{
+		h2{ margin-bottom: 25px; }
+		input[type="text"], textarea{
+			margin: 15px 0;
+		}
+		textarea{ resize: vertical; }
+		.btn{ width: 100%; }
+	}
+}
+.reviews-slider{ 
+	display: none; 
+	padding-bottom: 30px;
+	.carousel-control{
+		width: 8px;
+		height: 14px;
+		display: block;
+		top: 5px;
+		right: 0;
+		left: auto;
+		bottom: auto;
+		background: url(../img/slider-arrows.png) no-repeat;
+	}
+	.left { right: 40px; }
+	.right{ right: 10px; background-position: 100%;}
+}
+
+
+
