@@ -82,4 +82,7 @@
   .reviews-slider {
     display: inherit;
   }
+  .learning-system {
+    display: none;
+  }
 }
