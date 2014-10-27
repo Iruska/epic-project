@@ -10,6 +10,8 @@
 @burgundy-color: #8c0000;
 @darkblue-grey: #5e6c79;
 
+@light-blue: #79bcf5;
+
 @head-color: #353535;
 @text-color: #3c3c3c;
 @light-text-color: #5f5f5f;
@@ -149,8 +151,11 @@ button.btn{
 
 
 /* Формы */
-button, input{
-	outline: none!important;
+form{
+	button, input{ outline: none!important; }
+	input[type="text"], textarea{ margin: 15px 0; }
+	textarea{ resize: vertical; }
+	button{ width: 100%; }
 }
 
 
@@ -498,11 +503,6 @@ button, input{
 	}
 	&_form-review{
 		h2{ margin-bottom: 25px; }
-		input[type="text"], textarea{
-			margin: 15px 0;
-		}
-		textarea{ resize: vertical; }
-		.btn{ width: 100%; }
 	}
 }
 .reviews-slider{ 
@@ -601,5 +601,40 @@ button, input{
 		p{ font-size: 15px; padding-bottom: 10px; }
 		.btn{ font-size: 15px; }
 		img{ width: 94px; }
+	}
+}
+
+
+/* -----------------------
+    contact form styles
+   ----------------------*/
+.contact-form{
+	display: none;
+	padding-bottom: 20px;
+	h2{
+		font-weight: normal;
+		margin-bottom: 15px;
+	}
+	&_personal{
+		margin-bottom: 15px;
+		p{ 
+			font-size: 14px;
+			margin: 4px 0; 
+		}
+		.number span{ color: @light-blue; }
+	}
+}
+
+
+/* -----------------------
+    footer menu styles
+   ----------------------*/
+
+footer.main-menu{
+	background: #333a41;
+	.nav li a{
+		border: none;
+		font-weight: normal;
+		&:hover{ color: #ccc; }
 	}
 }

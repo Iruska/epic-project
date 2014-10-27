@@ -109,7 +109,8 @@
   .reviews {
     display: none;
   }
-  .reviews-slider {
+  .reviews-slider,
+  .contact-form {
     display: inherit;
   }
   .learning-system {
