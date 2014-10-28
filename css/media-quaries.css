@@ -55,6 +55,17 @@
   .friends_item p {
     font-size: 13px;
   }
+  .map_block h2 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .map_geolabel h3 {
+    font-size: 17px;
+  }
+  .map_geolabel span,
+  .map_geolabel a {
+    font-size: 13px;
+  }
 }
 @media (max-width: 769px) {
   .main-menu .navbar-collapse {
@@ -118,6 +129,12 @@
   }
   .about-us,
   .friends {
+    display: none;
+  }
+  .map_block {
+    padding-top: 20px;
+  }
+  .map_block p {
     display: none;
   }
 }

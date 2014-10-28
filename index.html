@@ -432,6 +432,39 @@
       </div>
     </section>
 
+    <!-- Карта -->
+    <section class="map" id="map">
+      <article class="map_block">
+        <div class="container">
+          <h2>Где проходят занятия</h2>
+          <p>В каждом курсе 5 занятий и один выходной на практику. Вы можете посетить все три, два или только один. Можете вообще не приходить и ваше лето будет потрачено зря!</p>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <figure class="map_geolabel">
+                <h3>Чкаловский, 15</h3>
+                <span>Главный офис Epic Skills</span>
+                <a href="#" class="link red-link">Показать на карте</a>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <figure class="map_geolabel">
+                <h3>7 линия ВО, 16-18</h3>
+                <span>Пространство Change Lab</span>
+                <a href="#" class="link red-link">Показать на карте</a>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <figure class="map_geolabel">
+                <h3>Миллионная 4/1</h3>
+                <span>Офис Epic Skills</span>
+                <a href="#" class="link red-link">Показать на карте</a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
 
     <!-- Чем еще мы можем быть полезны -->
     <section class="about-us">
@@ -570,7 +603,7 @@
           <!-- Меню -->
           <div class="collapse navbar-collapse pull-right">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">О школе</a></li>
+              <li><a href="#">О школе</a></li>
               <li><a href="#">Курсы</a></li>
               <li><a href="#">Коворкинг</a></li>
               <li><a href="#">Спецпроекты</a></li>
@@ -587,9 +620,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Карта -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     
     <!-- Для проверки ) -->
-    <!-- <script src="js/pixlayout.js"></script> -->
+    <script src="js/pixlayout.js"></script>
+
     <script>
       $(function(){
         $.pixlayout({
@@ -602,6 +639,15 @@
         // show: true,
         })
       }); 
+
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+            center: [55.751574, 37.573856],
+            zoom: 9,
+            controls: ['default']
+        });
+      });
+
     </script>
 
   </body>
