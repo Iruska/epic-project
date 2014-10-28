@@ -4,21 +4,23 @@
   -------------------- */  
 
 @grey-color: #b4b4b4;
+@light-grey: #515c66;
 @lightgrey-color: #dcdcdc;  
+@darkblue-grey: #5e6c79;
+@light-blue: #79bcf5;
+
 @darkred-color: #de4722;
 @red-color: #f04a22;
 @burgundy-color: #8c0000;
-@darkblue-grey: #5e6c79;
 
-@light-blue: #79bcf5;
+@bright-green: #93c41c;
+
 
 @head-color: #353535;
 @text-color: #3c3c3c;
 @light-text-color: #5f5f5f;
 
 @red-button: #ea5431;
-
-@separator: 2px dashed #dfdfdf;
 
 
 /* --------------
@@ -50,9 +52,22 @@ p{
 	line-height: 20px;
 	font-style: italic;
 }
+
+/* Разделительная линия */ 
 .separator{
+	margin: 20px 0;
 	padding-top: 20px;
-	border-bottom: @separator;
+	position: relative;
+	border-bottom: 2px dashed #dfdfdf;
+	&.clip:after {
+		content: "";
+		width: 25px;
+		height: 20px;
+		display: block;
+		position: absolute;
+		bottom: -10px;
+		background: url(../img/clips.png);
+	}
 }
 
 /* Стилизация красных ссылок */ 
@@ -94,6 +109,7 @@ p{
 button.btn{
 	color: #fff;
 	font-size: 16px;
+	&:hover, &:active, &:focus{ color: #fff; outline: none; }
 }
 .btn-danger{ background: @red-button; }
 .btn-danger.btn-shadow{
@@ -112,6 +128,15 @@ button.btn{
 .btn-grey.btn-shadow{
 	box-shadow: 0px 3px 0px 0px #3e4853;
 }
+.btn-green{ 
+	background: @bright-green;
+	&:hover{ background: #a0d324; } 
+}
+.btn-green.btn-shadow{
+	box-shadow: 0px 3px 0px 0px #7da51b;
+}
+
+
 .btn-black{
 	color: #000!important;
 	font-size: 14px;
@@ -247,7 +272,7 @@ form{
 			a{ 
 				color: #f1f1f1;
 				font-size: 16px;
-				font-weight: bold;
+				// font-weight: bold;
 				margin: 0; padding: 0; 
 				border-bottom: 4px solid transparent;
 			}
@@ -369,18 +394,7 @@ form{
 	&_events{ 
 		padding-top: 30px; 
 		padding-bottom: 30px;
-		margin-bottom: 20px;
 		position: relative;
-		border-bottom: @separator;
-		&:after{
-			content: "";
-			width: 25px;
-			height: 20px;
-			display: block;
-			position: absolute;
-			bottom: -10px;
-			background: url(../img/clips.png);
-		}
 	}
 	&_all-courses{ text-align: center; }
 	&_nav-tabs{
@@ -725,10 +739,58 @@ footer.main-menu{
 	a:after{ content: " → "; }
 }
 .courses{
-
+	h2{ margin: 0 0 20px; }
+	.nav-pills > li.active > a, 
+	.nav-pills > li.active > a:hover, 
+	.nav-pills > li.active > a:focus,
+	.nav-pills > li > a:hover{
+		color: @red-color;
+		background: transparent;
+		border-color: @red-color;
+	}
+	&_nav-pills{
+		li{
+			padding-left: 2px;
+			a{
+				color: @red-color;
+				padding: 1px 4px;
+				border: 1px solid transparent;
+			}
+		}
+	}
+	&_item{
+		margin-top: 20px;
+		margin-bottom: 40px;
+		// border: 1px solid #e8e8e8;
+		&_image{ width: 100%; }
+		h3{
+			margin: 8px 0 15px;
+			color: @light-grey;
+			font-weight: bold;
+		}
+		p{ font-size: 15px; }
+		.price{
+			font-size: 24px;
+			font-weight: bold;
+			color: @bright-green;
+			margin: 0 20px 0 0;
+		}
+		.price, .link{ 
+			padding-top: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			
+		}
+	}
+	.main-info{
+		margin: 0 0 15px;
+		border-radius: 3px;
+		padding: 5px 12px;
+		display: inline-block;
+		border: 1px solid #c7c7c7;
+		span{ font-weight: bold; }
+	}
 }
-
-
 
 
 

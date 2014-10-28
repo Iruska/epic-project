@@ -75,13 +75,110 @@
     </header>
 
 
-    <!-- Ближайшие курсы -->
+    <!-- Хлебные крошки -->
     <article class="breadcrumbs">
       <div class="container">
         <a href="index.html">Epic Skills</a>
         <p>Курсы</p>
       </div>      
     </article>
+
+    
+    <!-- Ближайшие курсы -->
+    <section class="courses">
+      <div class="container">
+        <!-- Шапка -->
+        <div class="clearfix">
+          <h2 class="pull-left">Ближайшие курсы</h2>
+          <a href="#" class="link red-link icon-email pull-right">Подписаться на рассылку расписания</a>
+        </div>
+        
+        <!-- Фильтрация по курсам -->
+        <div class="row">
+          <div class="col-lg-5">
+            <p>От основ синтаксиса до простых приложений. От основ синтаксиса до простых приложений.</p>
+          </div>
+          <div class="col-lg-7"> 
+            <ul class="nav nav-pills courses_nav-pills pull-right">
+              <li class="active"><a href="#">Все</a></li>
+              <li><a href="#">frontend</a></li>
+              <li><a href="#">backend</a></li>
+              <li><a href="#">веб-дизайн</a></li>
+              <li><a href="#">приложения</a></li>
+              <li><a href="#">воркшопы</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Сами курсы -->       
+
+        <div class="row courses_item">
+          <div class="col-lg-4">
+            <img src="pict/php-course.jpg" class="courses_item_image" alt="">
+          </div>
+
+          <div class="col-lg-8">
+            <!-- Колонка с описанием курса -->
+            <div class="clearfix">
+              <h3 class="pull-left">PHP - базовый курс</h3>
+              <div class="pull-right">
+                <a href="#" id="men1" data-toggle="tooltip" data-placement="top" title="Глеб Кушедов"><img src="pict/people.png" alt=""></a>
+                <a href="#" id="men2" data-toggle="tooltip" data-placement="top" title="Ярослав Каподастр"><img src="pict/people2.png" alt=""></a>
+                <a href="#" id="men3" data-toggle="tooltip" data-placement="right" title="Иван Грозный"><img src="pict/people3.png" alt=""></a>
+              </div>
+            </div>
+            <!-- Описание -->
+            <p class="main-info">Начало <span>12 апреля</span>, 10 занятий, каждые вторник и пятницу</p>
+            <p>От основ ситнаксиса до простых приложений (клиентская база, каталог недвижимости, форма заказов, API для приложения) От основ ситнаксиса до простых приложений (клиентская база, каталог недвижимости, форма заказов, API для приложения)</p>
+            <!-- Блок с ценой и записью -->
+            <div class="row">
+              <div class="col-lg-5">
+                <p class="price">13 500 Р</p>
+                <a href="#" class="link red-link">Посмотреть ближе</a>
+              </div>
+              <div class="col-lg-7">
+                <button class="btn btn-green btn-shadow">Записаться на бесплатное открытое занятие</button>
+              </div>
+            </div>              
+          </div>
+        </div>
+
+        <div class="row courses_item">
+          <div class="col-lg-4">
+            <img src="pict/jquery-course.jpg" class="courses_item_image" alt="">
+          </div>
+
+          <div class="col-lg-8">
+            <!-- Колонка с описанием курса -->
+            <div class="clearfix">
+              <h3 class="pull-left">JS+jQuery - начало легенды</h3>
+              <div class="pull-right">
+                <a href="#" id="men4" data-toggle="tooltip" data-placement="top" title="Глеб Кушедов"><img src="pict/people.png" alt=""></a>
+                <a href="#" id="men5" data-toggle="tooltip" data-placement="top" title="Ярослав Каподастр"><img src="pict/people2.png" alt=""></a>
+                <a href="#" id="men6" data-toggle="tooltip" data-placement="top" title="Иван Грозный"><img src="pict/people3.png" alt=""></a>
+                <a href="#" id="men7" data-toggle="tooltip" data-placement="top" title="Глеб Кушедов"><img src="pict/people.png" alt=""></a>
+                <a href="#" id="men8" data-toggle="tooltip" data-placement="right" title="Ярослав Каподастр"><img src="pict/people2.png" alt=""></a>
+              </div>
+            </div>
+            <!-- Описание -->
+            <p class="main-info">Начало <span>12 апреля</span>, 10 занятий, каждые вторник и пятницу</p>
+            <p>От основ ситнаксиса до простых приложений (клиентская база, каталог недвижимости, форма заказов, API для приложения) От основ ситнаксиса до простых приложений (клиентская база, каталог недвижимости, форма заказов, API для приложения)</p>
+            <!-- Блок с ценой и записью -->
+            <div class="row">
+              <div class="col-lg-5">
+                <p class="price">8 000 Р</p>
+                <a href="#" class="link red-link">Посмотреть ближе</a>
+              </div>
+              <div class="col-lg-7">
+                <button class="btn btn-green btn-shadow">Записаться на бесплатное открытое занятие</button>
+              </div>
+            </div>              
+          </div>
+        </div>
+
+        <div class="separator clip"></div>
+      </div>
+    </section>
 
 
     <!-- Отзывы -->
@@ -382,6 +479,15 @@
             controls: ['default']
         });
       });
+
+      $('#men1').tooltip('hide');
+      $('#men2').tooltip('hide');
+      $('#men3').tooltip('hide');
+      $('#men4').tooltip('hide');
+      $('#men5').tooltip('hide');
+      $('#men6').tooltip('hide');
+      $('#men7').tooltip('hide');
+      $('#men8').tooltip('hide');
 
     </script>
 
