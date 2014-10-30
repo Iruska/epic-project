@@ -17,6 +17,7 @@
 
 
 @head-color: #353535;
+@h3-head-color: #2f2f2f;
 @text-color: #3c3c3c;
 @light-text-color: #5f5f5f;
 
@@ -738,6 +739,8 @@ footer.main-menu{
 	a:hover{ text-decoration: none; }
 	a:after{ content: " → "; }
 }
+
+/* Блок с курсами */ 
 .courses{
 	h2{ margin: 0 0 20px; }
 	.nav-pills > li.active > a, 
@@ -793,4 +796,70 @@ footer.main-menu{
 }
 
 
+/* -----------------------
+    structure courses styles
+   ----------------------*/
+.structure{
+	h2{ 
+		margin: 0 0 30px;
+		text-align: center; 
+	}
+	&_timeline{
+		width: 85%;
+		margin: 0 auto 80px;
+		.row{ 
+			text-align: center;
+			.col-lg-2{ 
+				width: 20%; 
+				&:nth-child(2) p{ margin-left: -17px; }
+				&:nth-child(4) p{ margin-left: 17px; }
+			} 
+		}
+		p{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		&_block{
+			width: 85%;
+			color: #fff;
+			height: 18px;
+			margin: 0px auto;
+			background: #2e363d;
+			border-radius: 10px;
+			.col-lg-2{
+				&:first-child, &:nth-child(2){ text-align: left; }
+				&:last-child,  &:nth-child(4){ text-align: right; }
+			}
+		}
+		.step{
+			display: inline-block;
+			width: 27px;
+			height: 12px;
+			margin: 3px 5px 0;
+			background: #ccc;
+			cursor: pointer;
+			border-radius: 10px;
+			&:hover, &:active, .active{
+				background: #f06c4b;
+			}
+		}
+	}
+	&_information{
+		h3{
+			font-size: 20px;
+			color: @h3-head-color;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		.head{
+			color: #ef4b23;
+			font-size: 16px;
+			font-weight: bold;
+			margin-top: 15px;
+		}
+	}
+}
+
+
+/* Таймлайн */ 
 

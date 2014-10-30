@@ -66,6 +66,12 @@
   .map_geolabel a {
     font-size: 13px;
   }
+  .structure_timeline {
+    width: 100%;
+  }
+  .structure_timeline_block {
+    width: 90%;
+  }
 }
 @media (max-width: 769px) {
   .main-menu .navbar-collapse {
@@ -135,6 +141,9 @@
     padding-top: 20px;
   }
   .map_block p {
+    display: none;
+  }
+  .structure {
     display: none;
   }
 }
