@@ -742,7 +742,11 @@ footer.main-menu{
 
 /* Блок с курсами */ 
 .courses{
-	h2{ margin: 0 0 20px; }
+	h2{ 
+		margin: 0 0 20px; 
+		font-size: 30px;
+		font-weight: normal;
+	}
 	.nav-pills > li.active > a, 
 	.nav-pills > li.active > a:hover, 
 	.nav-pills > li.active > a:focus,
@@ -782,7 +786,6 @@ footer.main-menu{
 			padding-top: 10px;
 			display: inline-block;
 			vertical-align: middle;
-			
 		}
 	}
 	.main-info{
@@ -792,6 +795,48 @@ footer.main-menu{
 		display: inline-block;
 		border: 1px solid #c7c7c7;
 		span{ font-weight: bold; }
+	}
+	&_tablet{
+		.courses_item{ 
+			display: none; 
+			padding: 20px;
+			// border: 1px solid #e8e8e8;
+			p{
+				color: #656565;
+				font-size: 14px;
+			}
+			.head{
+				min-height: 88px;
+				margin-bottom: 5px;
+				.col-md-9 { padding-left: 0; }
+				h3, p{ margin: 0; }
+				h3{ font-size: 23px; }
+				p{
+					font-size: 13px;
+					font-weight: bold;
+				}
+				.date{
+					color: #ef4b23;
+					font-size: 15px;
+				}
+			}
+			.info{ min-height: 100px; }
+			span{
+				display: block;
+				margin: 0; padding: 0;
+				margin-top: -3px;
+			}
+			.desc{ 
+				color: #6b6b6b;
+				font-size: 13px;
+				margin-top: -7px; 
+			}
+			.btn-enter{
+				width: 100%;
+				margin-top: 15px;
+			}
+			
+		}
 	}
 }
 
@@ -859,7 +904,4 @@ footer.main-menu{
 		}
 	}
 }
-
-
-/* Таймлайн */ 
 

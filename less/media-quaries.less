@@ -65,6 +65,9 @@
 			span, a{ font-size: 13px; }
 		}
 	}
+	.courses_nav-pills li{ padding-left: 0; }
+	.courses_item{ display: none; }
+	.courses_tablet	.courses_item{ display: inherit; }
 	.structure{
 		&_timeline{
 			width: 100%;
@@ -130,6 +133,18 @@
 		}
 	}
 	.structure{ display: none; }
+	.courses{
+		&_nav-pills{ display: none; }
+		h2{ 
+			float: none!important; 
+		}
+		a{ 
+			margin-left: 16px;
+			margin-bottom: 15px;
+			display: inline-block;
+			float: none!important; 	
+		}
+	} 
 }
 
 

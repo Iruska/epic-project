@@ -66,6 +66,15 @@
   .map_geolabel a {
     font-size: 13px;
   }
+  .courses_nav-pills li {
+    padding-left: 0;
+  }
+  .courses_item {
+    display: none;
+  }
+  .courses_tablet .courses_item {
+    display: inherit;
+  }
   .structure_timeline {
     width: 100%;
   }
@@ -145,5 +154,17 @@
   }
   .structure {
     display: none;
+  }
+  .courses_nav-pills {
+    display: none;
+  }
+  .courses h2 {
+    float: none!important;
+  }
+  .courses a {
+    margin-left: 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+    float: none!important;
   }
 }
