@@ -447,7 +447,7 @@
     </section>
 
     <!-- Чем еще мы можем быть полезны -->
-    <section class="about-us">
+    <section class="about-us about-us-tablet">
       <div class="container">
         <h2>Чем еще мы можем быть полезны</h2>
         <p class="about-us_head">Мы отлично умеем учить людей, любим рассказывать о нашем подходе. Если обучение на курсах не совсем то, что вам нужно, у нас есть еще 4 предложения, которые точно понравятся:</p>
@@ -495,51 +495,91 @@
             </div>
           </div>
         </div>
-        <div class="separator"></div>
       </div>
     </section>
 
-    <!-- Контактная форма (только на телефоне) -->
-    <section class="contact-form">
+    <!-- Карта -->
+    <section class="map map-tablet" id="map">
+      <article class="map_block">
+        <div class="container">
+          <h2>Где проходят занятия</h2>
+          <p>В каждом курсе 5 занятий и один выходной на практику. Вы можете посетить все три, два или только один. Можете вообще не приходить и ваше лето будет потрачено зря!</p>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <figure class="map_geolabel">
+                <h3>Чкаловский, 15</h3>
+                <span>Главный офис Epic Skills</span>
+                <a href="#" class="link red-link">Показать на карте</a>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <figure class="map_geolabel">
+                <h3>7 линия ВО, 16-18</h3>
+                <span>Пространство Change Lab</span>
+                <a href="#" class="link red-link">Показать на карте</a>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <figure class="map_geolabel">
+                <h3>Миллионная 4/1</h3>
+                <span>Офис Epic Skills</span>
+                <a href="#" class="link red-link">Показать на карте</a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Контактная форма (планшет, телефон) -->
+    <section class="contact-form contact-form-tablet">
       <div class="container">
-        <h2>Контакты</h2>
-        <div class="row contact-form_personal">
-          <div class="col-xs-2">
-            <img src="pict/worker.png" alt="">
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>Контакты</h2>
+            <div class="row contact-form_personal">
+              <div class="col-md-2 col-xs-2">
+                <img src="pict/worker.png" alt="">
+              </div>
+              <div class="col-md-10 col-xs-10">
+                <p><strong>Записаться или узнать о курсах</strong></p>
+                <p class="number"><span>+7 911 947 59 86</span> - Ируська</p>
+              </div>
+            </div>
+            <div class="row contact-form_personal">
+              <div class="col-md-2 col-xs-2">
+                <img src="pict/worker-2.png" alt="">
+              </div>
+              <div class="col-md-10 col-xs-10">
+                <p><strong>По вопросам сотрудничества</strong></p>
+                <p class="number"><span>+7 911 947 59 86</span> - Глебушек</p>
+              </div>
+            </div>
+            <div class="row contact-form_personal">
+              <div class="col-md-2 col-xs-2">
+                <img src="pict/worker-3.png" alt="">
+              </div>
+              <div class="col-md-10 col-xs-10">
+                <p><strong>Я - юридическое лицо</strong></p>
+                <p class="number"><span>+7 911 947 59 86</span> - Ярославушка</p>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-10">
-            <p><strong>Записаться или узнать о курсах</strong></p>
-            <p class="number"><span>+7 911 947 59 86</span> - Ируська</p>
-          </div>
-        </div>
-        <div class="row contact-form_personal">
-          <div class="col-xs-2">
-            <img src="pict/worker-2.png" alt="">
-          </div>
-          <div class="col-xs-10">
-            <p><strong>По вопросам сотрудничества</strong></p>
-            <p class="number"><span>+7 911 947 59 86</span> - Глебушек</p>
-          </div>
-        </div>
-        <div class="row contact-form_personal">
-          <div class="col-xs-2">
-            <img src="pict/worker-3.png" alt="">
-          </div>
-          <div class="col-xs-10">
-            <p><strong>Я - юридическое лицо</strong></p>
-            <p class="number"><span>+7 911 947 59 86</span> - Ярославушка</p>
+          <div class="col-md-6 col-sm-12">
+            <h2>Напишите нам письмо</h2>
+            <form action="" role="form">
+              <input type="text" class="form-control" id="name" placeholder="Меня зовут (обязательно)">
+              <input type="email" class="form-control" id="name" placeholder="Ваша почта (обязательно)">
+              <textarea class="form-control" rows="4" placeholder="Вы хотите спросить.."></textarea>
+              <button type="submit" class="btn btn-grey btn-shadow">Написать письмо Ире</button>
+            </form>
           </div>
         </div>
 
-        <h2>Напишите нам письмо</h2>
-        <form action="" role="form">
-          <input type="text" class="form-control" id="name" placeholder="Меня зовут (обязательно)">
-          <input type="email" class="form-control" id="name" placeholder="Ваша почта (обязательно)">
-          <textarea class="form-control" rows="4" placeholder="Вы хотите спросить.."></textarea>
-          <button type="submit" class="btn btn-grey btn-shadow">Написать письмо Ире</button>
-        </form>
       </div>
     </section>
+
 
     <!-- Подвал с меню -->
     <footer class="navbar-inverse main-menu">

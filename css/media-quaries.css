@@ -82,6 +82,18 @@
   .structure_timeline_block {
     width: 90%;
   }
+  .inverse_friends {
+    display: none;
+  }
+  .contact-form-tablet {
+    display: inherit;
+  }
+  .about-us-tablet {
+    display: none;
+  }
+  .map-tablet {
+    display: inherit;
+  }
 }
 @media (max-width: 769px) {
   .main-menu .navbar-collapse {
