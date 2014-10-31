@@ -948,7 +948,7 @@ footer.main-menu{
 
 .sub-head{
 	min-height: 165px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	background: url(../img/sub-head-bg.jpg) no-repeat top center;
 	h2{ 
 		margin: 0 0 10px;
@@ -978,8 +978,9 @@ footer.main-menu{
    ------------------------ */
 
 .project-team{
-	padding: 20px 0 50px;
+	padding-bottom: 50px;
 	&_head{
+		margin-top: 30px;
 		margin-bottom: 20px;
 		h2{ margin: 0; }
 		.desc{ 
@@ -1055,6 +1056,25 @@ footer.main-menu{
 		.social{
 			a{ margin: 0 3px; }
 			a:hover{ opacity: 0.8; }
+		}
+	}
+	&_teachers{
+		margin-top: 15px;
+		img{ 
+			width: 100%; 
+			border-radius: 3px;
+			margin-bottom: 15px;
+		}
+		.name{
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.label{ 
+			font-size: 13px; 
+			line-height: 16px;
+			font-weight: normal;
+			white-space: pre-wrap;
+			background-color: @red-color;
 		}
 	}
 }
