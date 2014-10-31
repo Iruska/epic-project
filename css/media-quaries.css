@@ -74,6 +74,7 @@
   }
   .courses_tablet .courses_item {
     display: inherit;
+    margin-bottom: 20px;
   }
   .structure_timeline {
     width: 100%;
@@ -166,5 +167,8 @@
     margin-bottom: 15px;
     display: inline-block;
     float: none!important;
+  }
+  .foto-slider {
+    display: none;
   }
 }

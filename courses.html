@@ -400,13 +400,29 @@
             <p><a href="#" class="link red-link">Соноропериод, так или иначе, транслирует коллективный продукт?</a></p>
           </div>
         </div>
+        <div class="separator"></div>
       </div>
     </section>
+
   
     <!-- Интересно посмотреть, как прошли предыдущие курсы? слайдер -->
+    <section class="foto-slider">
+      <div class="container">
+        <h2>Интересно посмотреть, как прошли предыдущие курсы?</h2>
+        <p>Фотографии с прошедших занятий</p>
+          <ul class="bxslider">
+            <li><img src="pict/slider-foto.jpg" /></li>
+            <li><img src="pict/slider-foto1.jpg" /></li>
+            <li><img src="pict/slider-foto2.jpg" /></li>
+            <li><img src="pict/slider-foto3.jpg" /></li>
+            <li><img src="pict/slider-foto.jpg" /></li>
+          </ul>
+      </div>
+    </section>
+
 
     <!-- Как подружиться с Epic Skills -->
-    <section class="friends">
+    <section class="friends inverse_friends">
       <div class="container">
         <h2>Как подружиться с Epic Skills?</h2>
         <p class="friends_head">Вы настолько упорны, что долистали страницу до конца? Отлично, мы будем рады чему-нибудь вас научить, поработать с вами или познакомиться с вашим проектом</p>
@@ -563,21 +579,28 @@
     <!-- Карта -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     
+    
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+
+
     <!-- Для проверки ) -->
-    <script src="js/pixlayout.js"></script>
+    <!-- <script src="js/pixlayout.js"></script> -->
 
     <script>
-      $(function(){
-        $.pixlayout({
-        src: "Main960.jpg",
-        opacity: 0.3,
-        top: 0,
-        center: true,
-        left: 240,
-        clip: true,
-        // show: true,
-        })
-      }); 
+      // $(function(){
+      //   $.pixlayout({
+      //   src: "Main960.jpg",
+      //   opacity: 0.3,
+      //   top: 0,
+      //   center: true,
+      //   left: 240,
+      //   clip: true,
+      //   // show: true,
+      //   })
+      // }); 
 
       ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
@@ -601,6 +624,15 @@
       $('#step3').popover('hide');
       $('#step4').popover('hide');
       $('#step5').popover('hide');
+
+      $('.bxslider').bxSlider({
+        minSlides: 4,
+        maxSlides: 4,
+        slideWidth: 226,
+        slideMargin: 5,
+        controls: false,
+        moveSlides: 1
+      });
 
     </script>
 
