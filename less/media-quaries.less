@@ -79,7 +79,7 @@
 	.inverse_friends{ display: none; }
 	.contact-form-tablet{ display: inherit; }
 	.about-us-tablet{ display: none; }
-	.map-tablet, .vacancy, .project-team_tablet{ display: inherit; }
+	.map-tablet, .sub-head_vacancy, .project-team_tablet{ display: inherit; }
 	.no-tablet{ display: none; }
 	.project-team_head{
 		h2, .desc{
@@ -110,6 +110,17 @@
 			width: 80%;
 			margin: 0 auto 25px;
 			text-align: center;
+		}
+	}
+	.vacancy_sub-head{
+		padding: 40px 0 30px;
+		text-align: center;
+		.breadcrumbs{ display: none; }
+		strong{ display: none; }
+		p.desc{
+			width: 80%;
+			font-weight: normal;
+			margin: 0 auto 40px;
 		}
 	}
 }
@@ -201,7 +212,7 @@
 	}
 	.custom-panel, .questions{ display: none; }
 	.no-phone{ display: none; }
-	.vacancy{ 
+	.sub-head_vacancy{ 
 		p{ width: 100%; font-size: 14px; } 
 	}
 	.project-team_head{
@@ -216,6 +227,8 @@
 			h2, .desc{ text-align: center; }
 		}
 	}
+	.item-none{ display: inherit; }
+	.vacancy_sub-head .col-sm-4{ width: 33%; margin-top: 20px; }
 }
 
 

@@ -185,9 +185,9 @@ button.btn{
 
 /* Анимация стрелочки */ 
 @keyframes arrow{
-  0%{ background-position: 92% 50%; }
-  50%{ background-position: 96% 50%; }
-  100%{ background-position: 92% 50%; }
+  0%{ background-position: 96% 50%; }
+  50%{ background-position: 92% 50%; }
+  100%{ background-position: 96% 50%; }
 }
 
 
@@ -988,7 +988,7 @@ footer.main-menu{
 		}
 	}
 }
-.vacancy{
+.sub-head_vacancy{
 	display: none;
 	text-align: center;
 	h2{ margin-top: 35px; }
@@ -1166,6 +1166,88 @@ footer.main-menu{
 		.panel-body{ padding: 10px 0; }
 	}
 } 
+
+
+
+/* ---------------------------------
+
+
+    VACANCY.HTML - страница 
+    вакансий в школе
+
+
+  ---------------------------------- */ 
+
+/* Верхний заголовок */ 
+.vacancy_sub-head{
+	color: #fff;
+	min-height: 200px;
+	padding-bottom: 10px;
+	background-image: url(../img/vacancy_sub-head-bg.jpg);
+	h2, p, a{ color: #fff; }
+	p.desc{ color: #e6e6e6; font-weight: normal; }
+	.breadcrumbs{ padding-bottom: 10px; }
+	strong{ 
+		font-size: 15px;
+		display: block;
+		margin-bottom: 6px; 
+	}
+	&_icons{
+		text-align: center;
+		.col-lg-2{ width: 20%; }
+		span{
+			width: 62px;
+			height: 62px;
+			display: block;
+			margin: 0 auto;
+			border-radius: 100%;
+			border: 2px solid #fff;
+			position: relative;	
+			img{
+				position: absolute;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+				margin: auto;
+				transition: 0.3s all ease;
+			}
+			&:hover img{
+				animation: icons 1s ease infinite;
+			}
+		}
+		p{ 
+			padding: 0 5px;
+			margin-top: 10px; 
+		}
+	}
+}
+
+
+/* Анимация иконок */ 
+@keyframes icons{
+  0%  { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg);}
+  100%{ transform: rotate(-15deg); }
+}
+.item-none{ display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
