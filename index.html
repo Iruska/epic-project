@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Epic Skills</title>
+    <title>Epic Skills - Главная</title>
   
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -29,7 +29,7 @@
             <div class="animals">
               <img src="pict/owl.png" alt="">
               <img src="pict/cat.png" alt="">
-              <img src="pict/bird.png" alt="" class="bird" >
+              <!-- <img src="pict/bird.png" alt="" class="bird" > -->
             </div>
           </div>
           <!-- Меню -->
@@ -57,14 +57,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <!-- <a class="navbar-brand" href="#">Epic Skills <span>Санкт-Петербург</span></a> -->
-            <a class="logo" href="#"><img src="pict/logo.png" alt="Epic Skills"></a>
+            <a class="logo" href="index.html"><img src="pict/logo.png" alt="Epic Skills"></a>
           </div>
           <!-- Меню -->
           <div class="collapse navbar-collapse pull-right">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">О школе</a></li>
-              <li><a href="#">Курсы</a></li>
+              <li><a href="courses.html">Курсы</a></li>
               <li><a href="#">Коворкинг</a></li>
               <li><a href="#">Спецпроекты</a></li>
               <li><a href="#">Контакты</a></li>
@@ -158,7 +157,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Отображается только на телефоне -->
     <article class="block-trip">
       <button type="button" class="btn btn-primary btn-shadow icon-arrow icon-arrow-white">Экскурсия по школе</button>
     </article>
@@ -397,7 +396,6 @@
       </div>
     </div>
 
-  
     <!-- Как построена система обучения -->
     <section class="learning-system">
       <div class="container">
@@ -465,7 +463,6 @@
         </div>
       </article>
     </section>
-
 
     <!-- Чем еще мы можем быть полезны -->
     <section class="about-us">
@@ -624,28 +621,16 @@
 
     <!-- Карта -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    
-    <!-- Для проверки ) -->
-    <!-- <script src="js/pixlayout.js"></script> -->
 
     <script>
       $(function(){
-        $.pixlayout({
-        src: "Main960.jpg",
-        opacity: 0.3,
-        top: 0,
-        center: true,
-        left: 240,
-        clip: true,
-        // show: true,
-        })
-      }); 
-
-      ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
-            zoom: 9,
-            controls: ['default']
+        ymaps.ready(function () {
+          var myMap = new ymaps.Map('map', 
+            {
+              center: [55.751574, 37.573856],
+              zoom: 9,
+              controls: ['default']
+            });
         });
       });
 

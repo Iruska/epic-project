@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Epic Skills</title>
+    <title>Epic Skills - Курсы</title>
   
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -29,7 +29,7 @@
             <div class="animals">
               <img src="pict/owl.png" alt="">
               <img src="pict/cat.png" alt="">
-              <img src="pict/bird.png" alt="" class="bird" >
+              <!-- <img src="pict/bird.png" alt="" class="bird" > -->
             </div>
           </div>
           <!-- Меню -->
@@ -57,14 +57,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <!-- <a class="navbar-brand" href="#">Epic Skills <span>Санкт-Петербург</span></a> -->
-            <a class="logo" href="#"><img src="pict/logo.png" alt="Epic Skills"></a>
+            <a class="logo" href="index.html"><img src="pict/logo.png" alt="Epic Skills"></a>
           </div>
           <!-- Меню -->
           <div class="collapse navbar-collapse pull-right">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">О школе</a></li>
-              <li><a href="#">Курсы</a></li>
+              <li><a href="courses.html">Курсы</a></li>
               <li><a href="#">Коворкинг</a></li>
               <li><a href="#">Спецпроекты</a></li>
               <li><a href="#">Контакты</a></li>
@@ -74,7 +73,6 @@
       </nav>
     </header>
 
-
     <!-- Хлебные крошки -->
     <article class="breadcrumbs">
       <div class="container">
@@ -82,7 +80,6 @@
         <p>Курсы</p>
       </div>      
     </article>
-
     
     <!-- Ближайшие курсы -->
     <section class="courses">
@@ -111,7 +108,6 @@
         </div>
 
         <!-- Сами курсы -->       
-
         <div class="row courses_item">
           <div class="col-lg-4">
             <img src="pict/php-course.jpg" class="courses_item_image" alt="">
@@ -233,7 +229,6 @@
       </div>
     </section>
 
-
     <!-- Отзывы -->
     <section class="reviews">
       <div class="container">
@@ -346,7 +341,6 @@
       </div>
     </div>
 
-
     <!-- Как устроен каждый курс -->
     <section class="structure">
       <div class="container">
@@ -404,7 +398,6 @@
       </div>
     </section>
 
-  
     <!-- Интересно посмотреть, как прошли предыдущие курсы? слайдер -->
     <section class="foto-slider">
       <div class="container">
@@ -419,7 +412,6 @@
           </ul>
       </div>
     </section>
-
 
     <!-- Как подружиться с Epic Skills -->
     <section class="friends inverse_friends">
@@ -580,7 +572,6 @@
       </div>
     </section>
 
-
     <!-- Подвал с меню -->
     <footer class="navbar-inverse main-menu">
       <div class="container">
@@ -619,61 +610,44 @@
     <!-- Карта -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     
-    
     <!-- bxSlider Javascript file -->
-    <script src="jquery.bxslider.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="jquery.bxslider.css" rel="stylesheet" />
+    <script src="js/jquery.bxslider.js"></script>
 
-
-    <!-- Для проверки ) -->
-    <!-- <script src="js/pixlayout.js"></script> -->
-
-    <script>
-      // $(function(){
-      //   $.pixlayout({
-      //   src: "Main960.jpg",
-      //   opacity: 0.3,
-      //   top: 0,
-      //   center: true,
-      //   left: 240,
-      //   clip: true,
-      //   // show: true,
-      //   })
-      // }); 
-
-      ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-            center: [55.751574, 37.573856],
-            zoom: 9,
-            controls: ['default']
+    <script> 
+      $(function(){
+        ymaps.ready(function () {
+          var myMap = new ymaps.Map('map', 
+            {
+              center: [55.751574, 37.573856],
+              zoom: 9,
+              controls: ['default']
+            });
         });
-      });
 
-      $('#men1').tooltip('hide');
-      $('#men2').tooltip('hide');
-      $('#men3').tooltip('hide');
-      $('#men4').tooltip('hide');
-      $('#men5').tooltip('hide');
-      $('#men6').tooltip('hide');
-      $('#men7').tooltip('hide');
-      $('#men8').tooltip('hide');
+        $('#men1').tooltip('hide');
+        $('#men2').tooltip('hide');
+        $('#men3').tooltip('hide');
+        $('#men4').tooltip('hide');
+        $('#men5').tooltip('hide');
+        $('#men6').tooltip('hide');
+        $('#men7').tooltip('hide');
+        $('#men8').tooltip('hide');
 
-      $('#step1').popover('hide');
-      $('#step2').popover('hide');
-      $('#step3').popover('hide');
-      $('#step4').popover('hide');
-      $('#step5').popover('hide');
+        $('#step1').popover('hide');
+        $('#step2').popover('hide');
+        $('#step3').popover('hide');
+        $('#step4').popover('hide');
+        $('#step5').popover('hide');
 
-      $('.bxslider').bxSlider({
-        minSlides: 4,
-        maxSlides: 4,
-        slideWidth: 226,
-        slideMargin: 5,
-        controls: false,
-        moveSlides: 1
-      });
-
+        $('.bxslider').bxSlider({
+          minSlides: 4,
+          maxSlides: 4,
+          slideWidth: 226,
+          slideMargin: 5,
+          controls: false,
+          moveSlides: 1
+        });
+      }); 
     </script>
 
   </body>
