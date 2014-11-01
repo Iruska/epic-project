@@ -123,6 +123,7 @@
 			margin: 0 auto 40px;
 		}
 	}
+	.vacancy_current{ display: none; }
 }
 
 
@@ -229,6 +230,32 @@
 	}
 	.item-none{ display: inherit; }
 	.vacancy_sub-head .col-sm-4{ width: 33%; margin-top: 20px; }
+	.vacancy{
+		&_description{
+			padding-bottom: 0;
+			.actual{ display: none; }
+			h3{
+				font-size: 18px;
+				&:before{
+					content: "";
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					margin-right: 8px;
+					border-radius: 100%;
+					background: #93c41c;
+					position: relative;
+					top: -2px;
+				}
+			}
+			p{ font-size: 14px; }
+		}
+		&_terms{
+			margin: 0;
+			.item{ margin: 10px 0; }
+		}
+		button, .red-link{ display: none; }
+	}
 }
 
 

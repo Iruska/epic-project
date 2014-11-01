@@ -144,6 +144,9 @@
     font-weight: normal;
     margin: 0 auto 40px;
   }
+  .vacancy_current {
+    display: none;
+  }
 }
 @media (max-width: 769px) {
   .main-menu .navbar-collapse {
@@ -290,5 +293,38 @@
   .vacancy_sub-head .col-sm-4 {
     width: 33%;
     margin-top: 20px;
+  }
+  .vacancy_description {
+    padding-bottom: 0;
+  }
+  .vacancy_description .actual {
+    display: none;
+  }
+  .vacancy_description h3 {
+    font-size: 18px;
+  }
+  .vacancy_description h3:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 100%;
+    background: #93c41c;
+    position: relative;
+    top: -2px;
+  }
+  .vacancy_description p {
+    font-size: 14px;
+  }
+  .vacancy_terms {
+    margin: 0;
+  }
+  .vacancy_terms .item {
+    margin: 10px 0;
+  }
+  .vacancy button,
+  .vacancy .red-link {
+    display: none;
   }
 }

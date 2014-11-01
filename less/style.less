@@ -14,6 +14,7 @@
 @burgundy-color: #8c0000;
 
 @bright-green: #93c41c;
+@light-green: #b9f6a6;
 
 
 @head-color: #353535;
@@ -1098,13 +1099,6 @@ footer.main-menu{
 			font-weight: bold;
 		}
 	}
-	.custom-panel{
-		box-shadow: none;
-		p{ 
-			font-size: 15px; 
-			margin: 0;
-		}
-	}
 }
 
 /* Для отображения на планшете */ 
@@ -1230,9 +1224,86 @@ footer.main-menu{
 }
 .item-none{ display: none; }
 
+.custom-panel{
+	box-shadow: none;
+	p{ 
+		font-size: 15px; 
+		margin: 0;
+	}
+}
 
 
+/* Описание вакансий */
+.vacancy{
+	padding: 30px 0;
+	.custom-panel{ margin-bottom: 40px; }
+	hr{ margin-top: 30px; background-color: #b5b5b5; }
 
+	/* Боковая панелька */ 
+	&_current{
+		position: relative;
+		h3{
+			margin: 0;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		ul{ padding: 0; }
+		li{
+			margin: 20px 0;
+			list-style: none;
+			padding-left: 20px;
+			border-left: 9px solid @light-green;
+			&.soon{ border-color: #e2e2e2; }
+		}
+		p{ margin: 4px 0; }
+	}
+
+	/* Содержимое вакансии */
+	&_description{
+		padding-bottom: 20px;
+		h3{
+			font-size: 20px;
+			font-weight: bold;
+			margin: 0;
+		}
+		.actual{
+			color: #b0b0b0;
+			font-size: 15px;
+			float: right;
+			font-weight: bold;
+			&:before{
+				content: "";
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				margin-right: 8px;
+				border-radius: 100%;
+				background: @bright-green;
+			}
+		}
+		p{
+			font-size: 15px;
+			margin: 15px 0;
+		}
+		.red-link{ margin-left: 25px; }
+	}
+	&_terms{
+		margin: 20px 0;
+		.item{
+			padding: 0;
+			img, span{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			span{ 
+				width: 60%;
+				line-height: 15px;
+				margin-left: 10px;
+				padding-right: 20px;
+			}
+		}
+	}
+} 
 
 
 
