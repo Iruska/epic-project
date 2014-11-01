@@ -53,6 +53,21 @@ p{
 	line-height: 20px;
 	font-style: italic;
 }
+article h4{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 0;
+}
+.label{
+	font-size: 13px; 
+	line-height: 15px;
+	font-weight: normal;
+	white-space: pre-wrap;
+	background-color: @red-color;
+}
+.label-danger{
+	background: @red-color;
+}
 
 /* Разделительная линия */ 
 .separator{
@@ -1069,17 +1084,55 @@ footer.main-menu{
 			font-size: 15px;
 			font-weight: bold;
 		}
-		.label{ 
-			font-size: 13px; 
-			line-height: 16px;
-			font-weight: normal;
-			white-space: pre-wrap;
-			background-color: @red-color;
+	}
+	.custom-panel{
+		box-shadow: none;
+		p{ 
+			font-size: 15px; 
+			margin: 0;
 		}
 	}
 }
 
 
+/* Кто работал */
+.previous-working{
+	padding-top: 20px;
+	&_item{
+		margin-bottom: 15px;
+		.head{ 
+			font-size: 15px;
+			font-weight: bold;  
+			margin-bottom: 5px;
+		}
+	}
+} 
+
+/* Частые вопросы */
+.questions{
+	padding-top: 20px;
+	&_panel-group{
+		.panel-heading, .panel-default, .panel, .panel-collapse, .panel-body {
+			background: transparent;
+			border: none!important;
+			box-shadow: none!important;
+		}
+		.panel-heading{
+			padding: 2px 0;
+			p > a{
+				color: @red-color;
+				font-size: 15px;
+				line-height: 20px;
+				border-bottom: 1px dashed @red-color;
+				&:hover{
+					text-decoration: none;
+					border-bottom-color: transparent;
+				}
+			}
+		}
+		.panel-body{ padding: 10px 0; }
+	}
+} 
 
 
 
