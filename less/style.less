@@ -1,6 +1,12 @@
 
 /* -------------------
    Цветовые переменные
+   
+   (думаю есть необходимость, 
+   чтобы выбрать основные цвета, 
+   которые будут использоваться в проекте, 
+   иначе их большое кол-во, и здесь еще не все)
+
   -------------------- */  
 
 @grey-color: #b4b4b4;
@@ -16,17 +22,17 @@
 @bright-green: #93c41c;
 @light-green: #b9f6a6;
 
-
 @head-color: #353535;
 @h3-head-color: #2f2f2f;
 @text-color: #3c3c3c;
 @light-text-color: #5f5f5f;
 
 @red-button: #ea5431;
+@blue-button: #428bca;
 
 
 /* --------------
-   Общие стили
+    Общие стили
   --------------- */ 
 body{
 	font-family: 'PT Sans', sans-serif;
@@ -118,42 +124,59 @@ article h4{
 		background: url(../img/mini-icon-vk.png);
 	}
 }
-.link-site{
-	color: @text-color;
-}
+.link-site{ color: @text-color; }
 
-/* Стили для кнопок */ 
+
+/* ----------------
+  Стили для кнопок
+  ----------------- */ 
 button.btn{
 	color: #fff;
 	font-size: 16px;
-	&:hover, &:active, &:focus{ color: #fff; outline: none; }
-}
-.btn-danger{ background: @red-button; }
-.btn-danger.btn-shadow{
-	box-shadow: 0px 3px 0px 0px #ca512f;
-}
-.btn-primary.btn-shadow{
-	box-shadow: 0px 3px 0px 0px #30557b;
-}
-.btn-grey{ 
-	background: @darkblue-grey;
+	border: none;
 	&:hover, &:active, &:focus{ 
 		color: #fff; 
-		background: #54616C;
-	} 
+		outline: none!important;
+	}
+	&:active{
+		position: relative;
+		top: 1px;
+	}
 }
-.btn-grey.btn-shadow{
-	box-shadow: 0px 3px 0px 0px #3e4853;
+
+/* Красная кнопка */ 
+.btn-danger{ 
+	background-color: @red-button; 
+	&.btn-shadow{ box-shadow: 0px 3px 0px 0px darken(@red-button, 10%); }
+	&:hover{ background-color: lighten(@red-button, 4%); }
+	&:active{ background-color: darken(@red-button, 10%); }
 }
+
+/* Синяя кнопка */ 
+.btn-primary{ 
+	background-color: @blue-button; 
+	&.btn-shadow{ box-shadow: 0px 3px 0px 0px darken(@blue-button, 10%); }
+	&:hover{ background-color: lighten(@blue-button, 4%); }
+	&:active{ background-color: darken(@blue-button, 10%); }
+}
+
+/* Серая кнопка */ 
+.btn-grey{ 
+	background-color: @darkblue-grey; 
+	&.btn-shadow{ box-shadow: 0px 3px 0px 0px darken(@darkblue-grey, 10%); }
+	&:hover{ background-color: lighten(@darkblue-grey, 4%); }
+	&:active{ background-color: darken(@darkblue-grey, 10%); }
+}
+
+/* Зеленая кнопка */ 
 .btn-green{ 
-	background: @bright-green;
-	&:hover{ background: #a0d324; } 
-}
-.btn-green.btn-shadow{
-	box-shadow: 0px 3px 0px 0px #7da51b;
+	background-color: @bright-green; 
+	&.btn-shadow{ box-shadow: 0px 3px 0px 0px darken(@bright-green, 10%); }
+	&:hover{ background-color: lighten(@bright-green, 4%); }
+	&:active{ background-color: darken(@bright-green, 10%); }
 }
 
-
+/* Черная кнопка */ 
 .btn-black{
 	color: #000!important;
 	font-size: 14px;
