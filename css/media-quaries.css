@@ -92,11 +92,42 @@
     display: none;
   }
   .map-tablet,
-  .vacancy {
+  .vacancy,
+  .project-team_tablet {
     display: inherit;
   }
   .no-tablet {
     display: none;
+  }
+  .project-team_head h2,
+  .project-team_head .desc {
+    text-align: center;
+    font-weight: normal;
+  }
+  .project-team_head h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .project-team_head p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .project-team_teachers .label {
+    display: none;
+  }
+  .previous-working {
+    display: none;
+  }
+  .questions h4 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  .questions .desc {
+    width: 80%;
+    margin: 0 auto 25px;
+    text-align: center;
   }
 }
 @media (max-width: 769px) {
