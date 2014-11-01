@@ -212,14 +212,22 @@
     display: inline-block;
     float: none!important;
   }
+  .courses_item .price {
+    font-size: 20px;
+  }
+  .courses_tablet .courses_item .head h3 {
+    font-size: 20px;
+  }
   .project-team_tablet .col-md-3 {
+    padding-left: 15px;
+  }
+  .project-team_tablet .worker-info {
     padding-left: 20px;
   }
   .project-team_teachers img {
     width: 100px;
     float: left;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .project-team_teachers .text-block {
     width: 60%;

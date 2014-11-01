@@ -1396,11 +1396,12 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-/*@media (min-width: 360px) and (max-width: 769px){
+
+@media (max-width: 769px){
   .container {
-    width: 340px;
+    width: 100%;
   }
-}*/
+}
 @media (min-width: 770px) and (max-width: 959px) {
   .container {
     width: 750px;
@@ -1411,6 +1412,8 @@ pre code {
     width: 940px;
   }
 }
+
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
