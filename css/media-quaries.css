@@ -1,10 +1,21 @@
-/*-------------
-  header styles
----------------*/
+/* -------------
+   планшет
+   ------------- */
 @media (max-width: 961px) {
-  .big-block-trip {
+  .no-tablet,
+  .big-block-trip,
+  .courses_item,
+  .inverse_friends,
+  .about-us-tablet,
+  .previous-working,
+  .vacancy_current,
+  .project-team_teachers .label {
     display: none;
   }
+  .contact-form-tablet,
+  .map-tablet,
+  .sub-head_vacancy,
+  .project-team_tablet,
   .small-block-trip {
     display: inherit;
   }
@@ -69,9 +80,6 @@
   .courses_nav-pills li {
     padding-left: 0;
   }
-  .courses_item {
-    display: none;
-  }
   .courses_tablet .courses_item {
     display: inherit;
     margin-bottom: 20px;
@@ -81,23 +89,6 @@
   }
   .structure_timeline_block {
     width: 90%;
-  }
-  .inverse_friends {
-    display: none;
-  }
-  .contact-form-tablet {
-    display: inherit;
-  }
-  .about-us-tablet {
-    display: none;
-  }
-  .map-tablet,
-  .sub-head_vacancy,
-  .project-team_tablet {
-    display: inherit;
-  }
-  .no-tablet {
-    display: none;
   }
   .project-team_head h2,
   .project-team_head .desc {
@@ -111,12 +102,6 @@
   .project-team_head p {
     width: 80%;
     margin: 0 auto;
-  }
-  .project-team_teachers .label {
-    display: none;
-  }
-  .previous-working {
-    display: none;
   }
   .questions h4 {
     font-size: 24px;
@@ -144,10 +129,10 @@
     font-weight: normal;
     margin: 0 auto 40px;
   }
-  .vacancy_current {
-    display: none;
-  }
 }
+/* -------------
+   телефон
+   ------------- */
 @media (max-width: 769px) {
   .main-menu .navbar-collapse {
     float: none!important;
@@ -163,8 +148,18 @@
   }
   .top-menu,
   .small-block-trip,
+  .subscribe,
+  .reviews,
   .promo-block .nav-tabs,
-  .promo-block .tab-content {
+  .promo-block .tab-content,
+  .learning-system,
+  .about-us,
+  .friends,
+  .structure,
+  .foto-slider,
+  .custom-panel,
+  .questions,
+  .no-phone {
     display: none;
   }
   .promo-block {
@@ -188,9 +183,6 @@
     min-height: 120px;
     background: #cfcfc5 url(../img/bg-block-trip.jpg);
   }
-  .subscribe {
-    display: none;
-  }
   .near-courses h2 {
     font-size: 22px;
     font-weight: normal;
@@ -198,27 +190,14 @@
   .near-courses_all-courses {
     margin-bottom: 30px;
   }
-  .reviews {
-    display: none;
-  }
   .reviews-slider,
   .contact-form {
     display: inherit;
-  }
-  .learning-system {
-    display: none;
-  }
-  .about-us,
-  .friends {
-    display: none;
   }
   .map_block {
     padding-top: 20px;
   }
   .map_block p {
-    display: none;
-  }
-  .structure {
     display: none;
   }
   .courses_nav-pills {
@@ -232,9 +211,6 @@
     margin-bottom: 15px;
     display: inline-block;
     float: none!important;
-  }
-  .foto-slider {
-    display: none;
   }
   .project-team_tablet .col-md-3 {
     padding-left: 20px;
@@ -259,13 +235,6 @@
     display: block;
     width: 70%;
     margin: 20px auto 10px;
-  }
-  .custom-panel,
-  .questions {
-    display: none;
-  }
-  .no-phone {
-    display: none;
   }
   .sub-head_vacancy p {
     width: 100%;

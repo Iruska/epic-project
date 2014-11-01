@@ -126,6 +126,18 @@ article h4{
 }
 .link-site{ color: @text-color; }
 
+/* Хлебные крошки */ 
+.breadcrumbs{
+	padding: 20px 0;
+	a, p{
+		font-size: 13px;
+		color: @text-color;
+		display: inline-block;
+	}
+	a:hover{ text-decoration: none; }
+	a:after{ content: " → "; }
+}
+
 
 /* ----------------
   Стили для кнопок
@@ -568,6 +580,7 @@ form{
 		h2{ margin-bottom: 25px; }
 	}
 }
+/* Слайдер на телефонной версии */ 
 .reviews-slider{ 
 	display: none; 
 	padding-bottom: 30px;
@@ -767,17 +780,7 @@ footer.main-menu{
 
   ---------------------------------- */ 
 
-/* Хлебные крошки */ 
-.breadcrumbs{
-	padding: 20px 0;
-	a, p{
-		font-size: 13px;
-		color: @text-color;
-		display: inline-block;
-	}
-	a:hover{ text-decoration: none; }
-	a:after{ content: " → "; }
-}
+
 
 /* Блок с курсами */ 
 .courses{
@@ -968,7 +971,6 @@ footer.main-menu{
 }
 /* Карта */ 
 .map-tablet{ display: none; }
-
 
 
 
@@ -1255,7 +1257,6 @@ footer.main-menu{
 	}
 }
 
-
 /* Описание вакансий */
 .vacancy{
 	padding: 30px 0;
@@ -1343,22 +1344,3 @@ footer.main-menu{
 		}
 	}
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
