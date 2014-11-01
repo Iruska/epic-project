@@ -317,14 +317,21 @@
   .vacancy_description p {
     font-size: 14px;
   }
+  .vacancy_description button,
+  .vacancy_description .red-link {
+    display: none;
+  }
   .vacancy_terms {
     margin: 0;
   }
   .vacancy_terms .item {
     margin: 10px 0;
   }
-  .vacancy button,
-  .vacancy .red-link {
-    display: none;
+  .vacancy_team {
+    text-align: center;
+  }
+  .vacancy_team button {
+    margin-top: 10px;
+    float: none!important;
   }
 }
