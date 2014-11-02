@@ -138,6 +138,7 @@
     float: none!important;
   }
   .main-menu .nav li {
+    margin: 0;
     padding: 10px 0px;
   }
   .main-menu .nav li a {
@@ -145,6 +146,9 @@
   }
   .main-menu .logo {
     margin-left: 15px;
+  }
+  .main-menu .navbar-nav {
+    margin: 0;
   }
   .top-menu,
   .small-block-trip,

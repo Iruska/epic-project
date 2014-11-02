@@ -204,7 +204,7 @@ button.btn{
 .icon-arrow-white{
 	background-image: url(../img/icon-arrow.png);
 	&:focus{ background-image: url(../img/icon-arrow.png); }
-	&:hover{ animation: arrow 1s infinite; }
+	&:hover{ animation: arrow-white 1s infinite; }
 }
 .icon-arrow-black{
 	background-image: url(../img/icon-arrow-black.png);
@@ -215,15 +215,20 @@ button.btn{
 	}
 	&:hover{
 		color: #000;
-		animation: arrow 1s infinite;
+		animation: arrow-black 1s infinite;
 	}
 }
 
 /* Анимация стрелочки */ 
-@keyframes arrow{
-  0%{ background-position: 96% 50%; }
+@keyframes arrow-white{
+  0%{ background-position: 95% 50%; }
   50%{ background-position: 92% 50%; }
-  100%{ background-position: 96% 50%; }
+  100%{ background-position: 95% 50%; }
+}
+@keyframes arrow-black{
+  0%{ background-position: 92% 50%; }
+  50%{ background-position: 96% 50%; }
+  100%{ background-position: 92% 50%; }
 }
 
 
