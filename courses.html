@@ -93,18 +93,18 @@
           </div>
           <div class="col-lg-7 col-md-7 col-sm-12"> 
             <ul class="nav nav-pills courses_nav-pills pull-right">
-              <li class="active"><a href="#">Все</a></li>
-              <li><a href="#">frontend</a></li>
-              <li><a href="#">backend</a></li>
-              <li><a href="#">веб-дизайн</a></li>
-              <li><a href="#">приложения</a></li>
-              <li><a href="#">воркшопы</a></li>
+              <li class="active"><a href="#" class="a_all">Все</a></li>
+              <li><a href="#" class="a_frontend">frontend</a></li>
+              <li><a href="#" class="a_backend">backend</a></li>
+              <li><a href="#" class="a_design">веб-дизайн</a></li>
+              <li><a href="#" class="a_apps">приложения</a></li>
+              <li><a href="#" class="a_works">воркшопы</a></li>
             </ul>
           </div>
         </div>
 
         <!-- Сами курсы -->       
-        <div class="row courses_item">
+        <div class="row courses_item backend">
           <div class="col-lg-4">
             <img src="pict/php-course.jpg" class="courses_item_image" alt="">
           </div>
@@ -135,7 +135,7 @@
           </div>
         </div>
 
-        <div class="row courses_item">
+        <div class="row courses_item frontend">
           <div class="col-lg-4">
             <img src="pict/jquery-course.jpg" class="courses_item_image" alt="">
           </div>
@@ -643,6 +643,39 @@
           controls: false,
           moveSlides: 1
         });
+
+
+        /* Фильтрация курсов */
+        $('.a_all').click(function(){
+          $('.courses_item').fadeIn();
+          return false;
+        });
+        $('.a_frontend').click(function(){
+          $('.courses_item').fadeOut(1);
+          $('.frontend').fadeIn(600);
+          return false;
+        });
+        $('.a_backend').click(function(){
+          $('.courses_item').fadeOut(1);
+          $('.backend').fadeIn(600);
+          return false;
+        });
+        $('.a_design').click(function(){
+          $('.courses_item').fadeOut(1);
+          $('.design').fadeIn(600);
+          return false;
+        });
+        $('.a_apps').click(function(){
+          $('.courses_item').fadeOut(1);
+          $('.apps').fadeIn(600);
+          return false;
+        });
+        $('.a_works').click(function(){
+          $('.courses_item').fadeOut(1);
+          $('.works').fadeIn(600);
+          return false;
+        });
+
       }); 
     </script>
 
